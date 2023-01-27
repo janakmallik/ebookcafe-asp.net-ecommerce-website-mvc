@@ -1,0 +1,74 @@
+﻿@model login_regV2.Models.Book
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Book</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BookTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BookDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Author)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Author)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReleaseDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReleaseDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BookCategory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookCategory)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BookPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BookDiscount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookDiscount)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BookId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

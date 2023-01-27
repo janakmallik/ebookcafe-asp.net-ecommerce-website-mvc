@@ -1,0 +1,1 @@
+﻿DELETE FROM AspNetUsers WHERE Id='2b551402-6f43-46ec-965d-40fb74a71ebe';
